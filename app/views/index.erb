@@ -1,1 +1,10 @@
-<h1>My Robots</h1>
+<h3>My Robots</h3>
+
+<ul>
+  <% @robots.each do |robot| %>
+    <a href="/robots/<%= robot.id %>"><li><%= robot.name %></li></a>
+  <% end%>
+  </br>
+  <a class="btn btn-primary" href="/robots/new"><i class="glyphicon glyphicon-robot"></i> New Robot</a>
+
+</ul>

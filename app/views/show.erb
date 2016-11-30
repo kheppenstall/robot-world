@@ -1,0 +1,13 @@
+<h3><%= @robot.name%></h1>
+
+<h5>City: <%= @robot.city%></h3>
+<h5>State: <%= @robot.state%></h3>
+<h5>Department: <%= @robot.department%></h3>
+
+<a class="btn btn-warning" href="/robots/<%= @robot.id %>/edit"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+
+<form class = "delete-form" action="/robots/<%= @robot.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete" class="btn btn-danger" class="btn btn-small">
+</form>
+  

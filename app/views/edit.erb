@@ -1,0 +1,36 @@
+<div class="wrapper">
+
+<h1>Edit</h1>
+
+  <form action="/robots/<%=@robot.id%>" method="post">
+
+    <div class="form-group">
+      <input type="hidden" name="_method" value="PUT" />
+    </div>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name='robot[name]' class="form-control" value="<%=@robot.name%>">
+    </div>
+
+    <div class="form-group">
+      <label>City</label>
+      <input type="text" name='robot[city]' class="form-control" value="<%=@robot.state%>">
+    </div>
+
+
+    <div class="form-group">
+      <label>State</label>
+      <input type="text" name='robot[state]' class="form-control" value="<%=@robot.city%>">
+    </div>
+
+    <div class="form-group">
+      <label>Department</label>
+      <input type="text" name='robot[department]' class="form-control" value="<%=@robot.department%>">
+    </div>
+
+  <input type="submit" class="btn btn-primary">
+
+  </form>
+
+</div>
