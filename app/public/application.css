@@ -6,3 +6,20 @@
 .delete-form {
   display: inline-block;
 }
+
+.btn-xl {
+    margin-top:15px;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+h1 span {
+    height: px;
+    font-weight: bold;
+    font-size: 40px;
+    width:400px;
+    margin-bottom:15px;
+    padding-left:50px;
+    line-height:2;
+    position:relative;
+}
