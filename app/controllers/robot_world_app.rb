@@ -10,21 +10,21 @@ class RobotWorldApp < Sinatra::Base
   
   get '/robots' do
     @robots = Robot.all
-    erb :index
+    haml :index
   end
 
   get '/robots/new' do
-    erb :new
+    haml :new
   end
 
   get '/robots/:id' do
     @robot = Robot.find(params[:id])
-    erb :show
+    haml :show
   end
 
   get '/robots/:id/edit' do
     @robot = Robot.find(params[:id])
-    erb :edit
+    haml :edit
   end
 
   put '/robots/:id' do |id|

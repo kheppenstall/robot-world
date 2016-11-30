@@ -1,0 +1,16 @@
+%span.right-adjust
+  %a.btn.btn-primary{:href => "/robots/new"}
+    %i.glyphicon.glyphicon-robot
+    New Robot
+
+.wrapper
+  %h1
+    %span My Robots
+  %ul
+    - @robots.each do |robot|
+      %h3
+        %a{:href => "/robots/#{robot.id}"}
+          %li
+            =robot.name
+            %img{:height=>60, :src => "https://robohash.org/#{robot.name}.png" }/
+    

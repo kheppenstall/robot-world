@@ -1,0 +1,27 @@
+.wrapper
+  %h1
+    Edit
+    %img{:height=>60, :src => "https://robohash.org/#{@robot.name}.png" }/
+
+  %form{:action => "/robots/#{@robot.id}", :method => "post"}
+
+    .form-group
+      %input{:name => "_method", :type => "hidden", :value => "PUT"}/
+
+    .form-group
+      %label Name
+      %input.form-control{:name => "robot[name]", :type => "text", :value => @robot.name}/
+
+    .form-group
+      %label City
+      %input.form-control{:name => "robot[city]", :type => "text", :value => @robot.city}/
+
+    .form-group
+      %label State
+      %input.form-control{:name => "robot[state]", :type => "text", :value => @robot.state}/
+
+    .form-group
+      %label Department
+      %input.form-control{:name => "robot[department]", :type => "text", :value => @robot.department}/
+
+    %input.btn.btn-primary{:type => "submit"}/

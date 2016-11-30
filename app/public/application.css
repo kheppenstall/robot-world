@@ -23,3 +23,7 @@ h1 span {
     line-height:2;
     position:relative;
 }
+
+.right-adjust {
+  float :right;
+}

@@ -1,0 +1,22 @@
+.wrapper
+  %h1 Make a new robot!
+
+  %form{:action => "/robots", :method => "post"}
+  
+    .form-group
+      %label Name
+      %input.form-control{:name => "robot[name]", :placeholder => "Enter name", :type => "text"}/
+
+    .form-group
+      %label City
+      %input.form-control{:name => "robot[city]", :placeholder => "Enter city", :type => "text"}/
+
+    .form-group
+      %label State
+      %input.form-control{:name => "robot[state]", :placeholder => "Enter state", :type => "text"}/
+
+    .form-group
+      %label Department
+      %input.form-control{:name => "robot[department]", :placeholder => "Enter department", :type => "text"}/
+
+    %input.btn.btn-primary{:type => "submit"}/
